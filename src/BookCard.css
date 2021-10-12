@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img {
+    display: block;
+    margin: auto;
+    padding-top: 0;
+    height: 300px;
+    width: 200px;
+}
+
+.card h2 {
+    font-size: 0.8em;
+}
+
+.card h3 {
+    font-size: 0.5em;
+}
+
+
+.card:hover {
+    border: 3px solid #32502E;
+}
