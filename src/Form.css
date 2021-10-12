@@ -1,0 +1,60 @@
+form {
+    width: 60vw;
+    height: 20vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+}
+
+input {
+    min-width: 60%;
+    text-align: center;
+}
+
+input:focus {
+    outline: #32502E solid;
+}
+
+button {
+    min-width: 20%;
+    font-family: 'Noto Sans Mono', monospace;
+    color: white;
+    background-color: #32502E;
+}
+
+button:hover {
+    color: #32502E;
+    background-color: white;
+}
+
+@media (max-width: 1600px) {
+    form {
+        width: 100vw;
+        height: 30vh;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    label {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+    }
+
+    input {
+        min-width: 80%
+    }
+}

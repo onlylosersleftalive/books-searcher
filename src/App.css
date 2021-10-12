@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-color: #EADEB8;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: #32502E;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-section h1 {
+  padding-top: 2rem;
+}
