@@ -1,7 +1,7 @@
 form {
     width: 60vw;
     height: 20vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,12 +39,12 @@ button:hover {
 @media (max-width: 1600px) {
     form {
         width: 100vw;
-        height: 30vh;
+        height: 25vh;
         flex-direction: column;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     label {
         font-size: 1.5rem;
     }
@@ -56,5 +56,9 @@ button:hover {
 
     input {
         min-width: 80%
+    }
+
+    button {
+        width: 30%;
     }
 }

@@ -1,13 +1,21 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 450px;
+}
+
+.image-container {
+    height: 70%;
+}
+
+.info-container {
+    height: 25%;
+    margin-top: 5%
 }
 
 .card img {
     display: block;
     margin: auto;
-    padding-top: 0;
     height: 300px;
     width: 200px;
 }
@@ -16,8 +24,8 @@
     font-size: 0.8em;
 }
 
-.card h3 {
-    font-size: 0.5em;
+.card p {
+    font-size: 0.8em;
 }
 
 

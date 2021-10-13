@@ -22,12 +22,7 @@ const Form = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <input
-        type="text"
-        placeholder="What are you looking for?"
-        onChange={inputChangeHandler}
-        value={userInput}
-      />
+      <input type="text" onChange={inputChangeHandler} value={userInput} />
       <button type="submit">Search</button>
     </form>
   );
