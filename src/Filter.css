@@ -1,0 +1,50 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 5vh;
+    width: 50vw;
+    margin-bottom: 5%;
+}
+
+.filter-container label {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.filter-container select {
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 10rem;
+    color: #32502E;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.filter-container option {
+    color: #32502E;
+    border: #32502E;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter-container div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-container label {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .filter-container select {
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+}

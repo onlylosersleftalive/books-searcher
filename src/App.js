@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Form from "./Form";
+import Filter from "./Filter";
 import Books from "./Books";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <section className="search-section">
         <h1>Let's find books for you</h1>
         <Form onSaveData={saveDataHandler} />
+        <Filter />
       </section>
       <Books booksInfo={booksData} />
     </div>
