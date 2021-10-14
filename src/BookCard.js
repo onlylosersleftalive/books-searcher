@@ -1,6 +1,14 @@
 import "./BookCard.css";
 
 const BookCard = (props) => {
+  const deleteHandler = (event) => {
+    event.preventDefault();
+    props.changeBooksData(
+      props.booksInfo?.filter((el) => el.id !== props.book.id)
+    );
+    console.log(props.book);
+  };
+
   return (
     <div className="card">
       <div className="image-container">
@@ -10,7 +18,7 @@ const BookCard = (props) => {
         <button>
           <i class="far fa-heart"></i>
         </button>
-        <button>
+        <button onClick={deleteHandler}>
           <i class="fas fa-trash"></i>
         </button>
       </div>

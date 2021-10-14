@@ -25,7 +25,11 @@ function App() {
         <Form onSaveData={saveDataHandler} selectedSort={chosenSort} />
         <Filter selectedSort={chosenSort} onSortChange={sortChangeHandler} />
       </section>
-      <Books booksInfo={booksData} totalAmount={booksNumber} />
+      <Books
+        booksInfo={booksData}
+        changeBooksData={setBooksData}
+        totalAmount={booksNumber}
+      />
     </div>
   );
 }
