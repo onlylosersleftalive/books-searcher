@@ -6,7 +6,7 @@ const Books = (props) => {
     <section>
       <p className="results-number ">Found {props.totalAmount} results</p>
       <div className="results-section">
-        {props?.booksInfo?.map((book, index) => (
+        {props?.sortedBooks?.map((book, index) => (
           <BookCard
             key={index}
             id={index}
