@@ -11,6 +11,7 @@ const Books = (props) => {
             key={index}
             id={index}
             book={book}
+            liked={false}
             image={
               book.volumeInfo.hasOwnProperty("imageLinks") === false
                 ? "https://vignette.wikia.nocookie.net/pandorahearts/images/a/ad/Not_available.jpg/revision/latest?cb=20141028171337"

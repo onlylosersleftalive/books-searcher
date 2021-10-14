@@ -1,12 +1,22 @@
 import "./BookCard.css";
 
 const BookCard = (props) => {
-  const deleteHandler = (event) => {
-    event.preventDefault();
+  const deleteHandler = () => {
     props.changeBooksData(
       props.booksInfo?.filter((el) => el.id !== props.book.id)
     );
     console.log(props.book);
+  };
+
+  const likeHandler = () => {
+    props.changeBooksData(
+      props.booksInfo?.map((el) => {
+        if (el.id === props.book.id) {
+          return { ...el, liked: !props.book.liked };
+        }
+        return el;
+      })
+    );
   };
 
   return (
@@ -15,11 +25,15 @@ const BookCard = (props) => {
         <img src={props.image} alt="The book cover" />
       </div>
       <div className="actions-container">
-        <button>
-          <i class="far fa-heart"></i>
+        <button onClick={likeHandler}>
+          {props.book.liked ? (
+            <i className="fas fa-heart"></i>
+          ) : (
+            <i className="far fa-heart"></i>
+          )}
         </button>
         <button onClick={deleteHandler}>
-          <i class="fas fa-trash"></i>
+          <i className="fas fa-trash"></i>
         </button>
       </div>
       <div className="info-container">
