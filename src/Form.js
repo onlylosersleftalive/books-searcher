@@ -12,10 +12,11 @@ const Form = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     request
-      .get("https://www.googleapis.com/books/v1/volumes")
-      .query({ q: userInput })
+      .get(
+        `https://www.googleapis.com/books/v1/volumes?q=${userInput}&orderBy=${props.selectedSort}`
+      )
       .then((data) => {
-        props.onSaveData(data.body.items);
+        props.onSaveData(data.body);
       });
     setUserInput("");
   };
