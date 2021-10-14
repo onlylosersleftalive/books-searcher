@@ -1,10 +1,10 @@
 .filter-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     min-height: 5vh;
-    width: 50vw;
-    margin-bottom: 5%;
+    width: 100vw;
+    margin-bottom: 2%;
 }
 
 .filter-container label {
@@ -29,18 +29,8 @@
 }
 
 @media (max-width: 750px) {
-    .filter-container {
-        flex-direction: column;
-    }
-
-    .filter-container div {
-        display: flex;
-        flex-direction: column;
-    }
-
     .filter-container label {
         font-size: 1rem;
-        margin-right: 0;
     }
 
     .filter-container select {
