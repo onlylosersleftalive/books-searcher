@@ -5,6 +5,12 @@
     overflow: hidden;
 }
 
+.results-number {
+    font-size: 1rem;
+    height: 4rem;
+    width: 100vw;
+}
+
 @media (max-width: 1100px) {
     .results-section {
         grid-template-columns: repeat(2, 1fr);
